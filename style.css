@@ -107,7 +107,6 @@ select {
     padding: 16px;
     padding-inline: 15px;
     color: white;
-    /* width: inherit; */
 }
 
 legend input ::placeholder {
@@ -117,7 +116,6 @@ legend input ::placeholder {
 .content {
     margin-top: 50px;
     width: 56%;
-    /* border: 2px solid pink; */
 }
 
 .sticker {
@@ -213,4 +211,22 @@ legend input ::placeholder {
 
 i:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .content {
+        width: 90%;
+    }
+
+    form {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    form input,
+    button,
+    select,
+    #search {
+        width: 100%;
+    }
 }
